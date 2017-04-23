@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Registracija</title>
+    <link rel="stylesheet" href="registracija.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+<body>
+    <nav>
+        <h1 class="animated bounce" style="color:white">Registracija</h1>
+    </nav>
+
+    <section class="page-section register">
+        <div class="container">
+            <form>
+                <fieldset>
+                    <div>
+                        <label>Ime:</label>
+                        <input type="text" id="ime" name="ime" placeholder="Ime" required="required" /><br />
+                    </div>
+
+                    <div>
+                        <label>Prezime:</label>
+                        <input type="text" id="prezime" name="prezime" placeholder="Prezime" required="required" /><br />
+                    </div>
+
+                    <div>
+                        <label>Email:</label>
+                        <input type="email" id="email" name="id" placeholder="nema@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="required" /><br />
+                    </div>
+
+                    <div>
+                        <label>Maticni broj:</label>
+                        <input type="number" id="mbroj" name="mbroj" placeholder="Unesite broj od 13 cifara" pattern="[0-9] {13}" required="required" /><br />
+                    </div>
+
+                    <div>
+                        <label>Grad:</label>
+                        <select>
+                            <option value="volvo">Banja Luka</option>
+                            <option value="saab">Doboj</option>
+                            <option value="opel">Teslic</option>
+                            <option value="audi">Trebinje</option>
+                        </select> <br />
+                    </div>
+
+                    <div>
+                        <label>Zip:</label>
+                        <input type="number" id="zip" name="zip" placeholder="Zip kod od 5 cifara" pattern="[0-9] {5}" required="required" /> <br />
+                    </div>
+
+                   
+                        <label>Pol:</label>
+                        <input type="radio" name="sex" value="Muski" />Muski
+                        <input type="radio" name="sex" value="Zenski">Zenski<br />
+                    
+
+                    
+                        <label>Prihvatam uslove:</label>
+                        <input type="checkbox" id="uslovi" name="uslovi" required="required" /> <br />
+                    
+
+                    <button class="button" style="vertical-align:middle"><span>Dalje </span></button>
+
+                </fieldset>
+            </form>
+            </div>
+        </section>
+</body>
+
+
+</html>
